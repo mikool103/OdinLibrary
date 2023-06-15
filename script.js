@@ -11,20 +11,20 @@ pagemask.classList.add('page-mask');
 
 
 
-
-
-
-
-
-function Books (title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function () {
-        return title + " by " + author + ", " + pages + " pages, " + read + ".";
+class Books {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
     }
+
 }
+
+
+
+
+
 
 
 function addBookToLibrary(title, author, pages, read) {
