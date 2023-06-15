@@ -4,14 +4,14 @@ const cancelButton = document.querySelector('.cancel');
 const booksGrid = document.querySelector('.books-grid');
 const body = document.querySelector('body');
 const pagemask = document.createElement('div');
-
+var visibility = 'hidden';
+var myLibrary = [];
 
 pagemask.classList.add('page-mask');
 
 
-var visibility = 'hidden';
 
-myLibrary = [];
+
 
 
 
@@ -41,7 +41,7 @@ popUpForm.addEventListener('submit', (e) => {
     var author = document.querySelector('#author');
     var pages = document.querySelector('#pages');
     var read = document.querySelector('#read');
-    let book = addBookToLibrary(title.value, author.value, pages.value, read.value);
+    var book = addBookToLibrary(title.value, author.value, pages.value, read.value);
         var card = document.createElement('div');
         card.classList.add('book-card');
         const authorText = document.createElement('p');
